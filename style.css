@@ -1,18 +1,27 @@
-*{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;background:#0e0e0f;color:#fff;display:flex;justify-content:center;padding:22px}
-.bg{position:fixed;inset:0;background:radial-gradient(circle at 20% 10%,rgba(233,89,196,.18),transparent 30%),radial-gradient(circle at 85% 20%,rgba(105,237,241,.12),transparent 30%),#0e0e0f;z-index:-1}
-.card{width:100%;max-width:430px;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 25px 60px rgba(0,0,0,.45)}
-.hero{width:100%;display:block}
-h1{text-align:center;margin:22px 0 6px;font-size:2.3rem}
-.location{text-align:center;color:#ddd;line-height:1.6;margin:0 0 26px}
-.book{background:linear-gradient(135deg,#e959c4,#69edf1)!important;color:#fff!important;font-weight:700}
-.divider{text-align:center;margin:26px 28px 18px;position:relative;color:#cfcfcf;font-weight:600}
-.divider:before,.divider:after{content:"";position:absolute;top:50%;width:34%;height:1px;background:#444}
-.divider:before{left:0}.divider:after{right:0}
-.btn{display:flex;align-items:center;gap:16px;margin:14px 22px;padding:18px 20px;background:#1b1b1d;color:#fff;text-decoration:none;border-radius:18px;transition:.25s}
-.btn:hover{transform:translateY(-2px);background:#252528}
-.btn i:first-child{width:24px;font-size:1.25rem}
-.btn span{flex:1;font-weight:600}
-.right{opacity:.5}
-.contact{display:flex;justify-content:center;gap:30px;padding:26px 0 12px}
-.contact a{color:#69edf1;text-decoration:none;font-weight:600}
-footer{text-align:center;color:#888;padding:0 0 20px;font-size:.85rem}
+*{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;background:#0d0d0f;color:#fff;display:flex;justify-content:center;padding:20px}
+.bg{position:fixed;inset:0;background:
+radial-gradient(circle at 15% 15%,rgba(233,89,196,.16),transparent 30%),
+radial-gradient(circle at 85% 20%,rgba(105,237,241,.12),transparent 30%),
+#0d0d0f;z-index:-1}
+.card{max-width:430px;width:100%;background:rgba(255,255,255,.06);backdrop-filter:blur(20px);border-radius:28px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.08)}
+.hero{display:block;width:100%;box-shadow:0 10px 25px rgba(0,0,0,.35)}
+.content{padding:22px}
+h1{text-align:center;font-size:2.2rem;margin:0}
+.salon{text-align:center;font-weight:700;margin:6px 0 2px}
+.city{text-align:center;color:#bfbfbf;margin:0 0 22px}
+.book{display:flex;align-items:center;justify-content:center;gap:12px;padding:18px;text-decoration:none;color:#fff;background:linear-gradient(135deg,#e959c4,#69edf1);border-radius:18px;font-weight:700;box-shadow:0 10px 25px rgba(233,89,196,.25);transition:.25s}
+.book:hover{transform:translateY(-2px) scale(1.02)}
+.divider{display:flex;align-items:center;gap:12px;color:#bdbdbd;font-weight:600;margin:24px 0 18px}
+.divider:before,.divider:after{content:'';height:1px;background:#444;flex:1}
+.social{display:flex;align-items:center;padding:18px;margin:12px 0;background:#18181b;border-radius:18px;text-decoration:none;color:#fff;transition:.25s;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.social:hover{transform:translateY(-2px);background:#202024}
+.social i:first-child{font-size:1.5rem;width:34px}
+.instagram i:first-child{color:#ff4fd8}
+.tiktok i:first-child{color:#69edf1}
+.facebook i:first-child{color:#4c8dff}
+.social span{flex:1;font-weight:600}
+.social .fa-chevron-right{opacity:.4}
+.contact{display:flex;gap:14px;margin-top:24px}
+.contact a{flex:1;text-align:center;text-decoration:none;background:#18181b;color:#fff;padding:15px;border-radius:16px;font-weight:600}
+.contact i{margin-right:8px;color:#69edf1}
+footer{text-align:center;color:#888;font-size:.85rem;margin-top:20px}
