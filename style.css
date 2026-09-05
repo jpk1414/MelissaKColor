@@ -18,7 +18,10 @@ h1{text-align:center;margin:0;font-size:2.25rem}
 footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
 
 .address {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 8px;
     color: #666;
@@ -33,6 +36,12 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
 }
 
 .address i {
-    margin-right: 4px;
+    flex: 0 0 auto;
+    margin-top: 3px;
+    margin-right: 5px;
     font-size: 12px;
+}
+
+.address span {
+    text-align: center;
 }
