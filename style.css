@@ -16,3 +16,23 @@ h1{text-align:center;margin:0;font-size:2.25rem}
 .instagram{color:#ff4fd8}.tiktok{color:#69edf1}.facebook{color:#4d8cff}
 .arrow{opacity:.45}
 footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
+
+.address {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.address:hover {
+    text-decoration: underline;
+}
+
+.address i {
+    margin-right: 4px;
+    font-size: 12px;
+}
