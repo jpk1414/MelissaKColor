@@ -1,5 +1,5 @@
 *{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;background:#0e0e10;color:#fff;display:flex;justify-content:center;padding:22px}
-.bg{position:fixed;inset:0;background:radial-gradient(circle at 15% 10%,rgba(233,89,196,.16),transparent 30%),radial-gradient(circle at 90% 15%,rgba(105,237,241,.10),transparent 30%),#0e0e10;z-index:-1}
+.bg{position:fixed;inset:0;background:linear-gradient(rgba(14,14,16,.34),rgba(14,14,16,.52)),url('portfolio-collage.png') center/cover no-repeat;z-index:-1}
 .card{max-width:430px;width:100%;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 25px 60px rgba(0,0,0,.45)}
 .hero{width:100%;display:block}
 .content{padding:22px}
@@ -51,4 +51,214 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
 .address span {
     display: block;
     text-align: center;
+}
+
+@media (max-width: 699px) {
+    h1 {
+        margin: -22px -22px 4px;
+        height: 150px;
+        padding: 0;
+        overflow: hidden;
+        color: transparent;
+        background: #f45bc4 url('banner.png') center/cover no-repeat;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0;
+        filter: none;
+        text-shadow: none;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        min-height: 100dvh;
+        align-items: center;
+    }
+
+    .bg {
+        background-image: linear-gradient(rgba(14,14,16,.28),rgba(14,14,16,.44)),url('portfolio-collage-desktop.png');
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: minmax(230px,300px) minmax(430px,620px);
+        align-items: center;
+        gap: clamp(32px,5vw,72px);
+        width: min(94vw,1000px);
+        max-width: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .hero {
+        border-radius: 28px;
+        box-shadow: 0 20px 50px rgba(0,0,0,.38);
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        gap: 12px;
+        padding: 0;
+    }
+
+    h1,
+    .salon,
+    .address,
+    .book,
+    .divider,
+    footer {
+        grid-column: 1 / -1;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: clamp(2.7rem,4.5vw,4.4rem);
+        line-height: 1;
+        letter-spacing: -.04em;
+        text-shadow: 0 4px 20px rgba(0,0,0,.34);
+    }
+
+    .salon {
+        text-align: left;
+        margin: 0;
+        font-size: 1.05rem;
+        letter-spacing: .02em;
+    }
+
+    .address {
+        width: auto;
+        margin: 2px 0 14px;
+        text-align: left;
+        font-size: .92rem;
+    }
+
+    .address span { text-align: left; }
+
+    .book {
+        width: min(100%,330px);
+        margin: 0 0 8px;
+        padding: 17px 22px;
+    }
+
+    .divider {
+        margin: 12px 0 2px;
+        justify-content: flex-start;
+    }
+
+    .divider:before { max-width: 72px; }
+
+    .social {
+        min-width: 0;
+        margin: 0;
+        padding: 14px;
+        gap: 9px;
+        background: rgba(14,14,16,.72);
+        border: 1px solid rgba(255,255,255,.08);
+        backdrop-filter: blur(10px);
+    }
+
+    .social span { font-size: .78rem; }
+    .arrow { display: none; }
+
+    footer {
+        margin-top: 12px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 700px) and (max-height: 740px) {
+    .card { grid-template-columns: 210px minmax(410px,590px); gap: 36px; }
+    .content { gap: 8px; }
+    h1 { font-size: 2.7rem; }
+    .hero { max-height: 420px; object-fit: cover; }
+    .book { padding: 13px 18px; }
+    .social { padding: 11px; }
+    footer { margin-top: 6px; }
+}
+
+@media (min-width: 700px) {
+    .bg {
+        background-image: linear-gradient(rgba(14,14,16,.14),rgba(14,14,16,.14)),url('portfolio-collage-desktop-v3.png');
+    }
+
+    .card {
+        display: block;
+        width: min(90vw,500px);
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+
+    .hero {
+        display: block;
+        width: min(100%,310px);
+        max-height: none;
+        margin: 0 auto;
+        border-radius: 24px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 13px;
+        padding: 26px 0 0;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: clamp(3rem,4.5vw,4rem);
+        line-height: 1;
+        letter-spacing: -.04em;
+        text-shadow: 0 3px 16px rgba(0,0,0,.55);
+    }
+
+    .salon,
+    .address,
+    .address span,
+    footer {
+        text-align: center;
+    }
+
+    .salon { margin: 0; font-size: 1.08rem; text-shadow: 0 2px 10px rgba(0,0,0,.65); }
+
+    .address {
+        width: fit-content;
+        margin: 0 auto 8px;
+        font-size: 1rem;
+        text-shadow: 0 2px 10px rgba(0,0,0,.7);
+    }
+
+    .book {
+        width: 100%;
+        margin: 0;
+        padding: 20px 24px;
+        font-size: 1.05rem;
+    }
+
+    .divider {
+        margin: 8px 0 2px;
+        justify-content: center;
+    }
+
+    .divider:before { max-width: none; }
+
+    .social {
+        width: 100%;
+        margin: 0;
+        padding: 17px 20px;
+        background: rgba(14,14,16,.64);
+        border: 1px solid rgba(255,255,255,.15);
+        backdrop-filter: none;
+    }
+
+    .social span { font-size: 1rem; }
+    .arrow { display: block; }
+    footer { margin: 8px 0 0; text-shadow: 0 2px 8px rgba(0,0,0,.7); }
 }
