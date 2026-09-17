@@ -1,6 +1,8 @@
-*{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;background:#0e0e10;color:#fff;display:flex;justify-content:center;padding:22px}
+*{box-sizing:border-box}
+html{min-height:100%;background:#0e0e10}
+body{min-height:100dvh;margin:0;font-family:Poppins,sans-serif;background:#0e0e10;color:#fff;display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,22px)}
 .bg{position:fixed;inset:0;background:radial-gradient(circle at 15% 10%,rgba(233,89,196,.16),transparent 30%),radial-gradient(circle at 90% 15%,rgba(105,237,241,.10),transparent 30%),#0e0e10;z-index:-1}
-.card{max-width:430px;width:100%;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 25px 60px rgba(0,0,0,.45)}
+.card{max-width:430px;width:100%;max-height:calc(100dvh - clamp(24px,6vw,44px));background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border-radius:30px;overflow:auto;border:1px solid rgba(255,255,255,.08);box-shadow:0 25px 60px rgba(0,0,0,.45)}
 .hero{width:100%;display:block}
 .content{padding:22px}
 h1{text-align:center;margin:0;font-size:2.25rem}
@@ -51,4 +53,20 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
 .address span {
     display: block;
     text-align: center;
+}
+
+@media (max-width: 380px) {
+    .content { padding: 18px; }
+    h1 { font-size: 2rem; }
+    .btn { gap: 12px; padding: 15px 16px; }
+}
+
+@media (max-height: 650px) {
+    .content { padding: 16px 20px; }
+    h1 { font-size: 1.9rem; }
+    .salon { margin-top: 4px; }
+    .address { margin: 4px auto 8px; }
+    .btn { padding: 13px 16px; margin-bottom: 9px; }
+    .divider { margin: 14px 0 12px; }
+    footer { margin-top: 14px; }
 }
