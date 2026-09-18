@@ -1,5 +1,5 @@
 *{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;background:#0e0e10;color:#fff;display:flex;justify-content:center;padding:22px}
-.bg{position:fixed;inset:0;background:linear-gradient(rgba(14,14,16,.34),rgba(14,14,16,.52)),url('portfolio-collage.png') center/cover no-repeat;z-index:-1}
+.bg{position:fixed;inset:0;background:linear-gradient(rgba(14,14,16,.28),rgba(14,14,16,.42)),url('portfolio-collage-side-profile-no-bowl.png') center/cover no-repeat;z-index:-1}
 .card{max-width:430px;width:100%;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 25px 60px rgba(0,0,0,.45)}
 .hero{width:100%;display:block}
 .content{padding:22px}
@@ -77,7 +77,7 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
     }
 
     .bg {
-        background-image: linear-gradient(rgba(14,14,16,.28),rgba(14,14,16,.44)),url('portfolio-collage-desktop.png');
+        background-image: linear-gradient(rgba(14,14,16,.18),rgba(14,14,16,.28)),url('portfolio-collage-side-profile-no-bowl.png');
     }
 
     .card {
@@ -183,7 +183,7 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
 
 @media (min-width: 700px) {
     .bg {
-        background-image: linear-gradient(rgba(14,14,16,.14),rgba(14,14,16,.14)),url('portfolio-collage-desktop-v3.png');
+        background-image: linear-gradient(rgba(14,14,16,.08),rgba(14,14,16,.12)),url('portfolio-collage-side-profile-no-bowl.png');
     }
 
     .card {
@@ -262,3 +262,4 @@ footer{text-align:center;color:#888;font-size:.85rem;margin-top:22px}
     .arrow { display: block; }
     footer { margin: 8px 0 0; text-shadow: 0 2px 8px rgba(0,0,0,.7); }
 }
+
